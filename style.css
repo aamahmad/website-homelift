@@ -671,3 +671,60 @@ body {
     color: #333333 !important;
     border-color: #333333 !important;
 }
+
+@media screen and (max-width: 768px) {
+    
+    #navbar {
+        position: sticky !important;
+        top: 0;
+        z-index: 9999;
+        background-color: #ffffff !important;
+        padding: 10px 0 !important;
+    }
+    
+.nav-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+.nav-links {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin-top: 10px !important;
+        gap: 15px !important;
+    }
+
+.nav-links li a {
+        font-size: 13px !important; 
+        padding: 5px !important;
+    }
+
+    p, .description {
+        text-align: justify !important;
+    }
+    
+    
+ .container, .section-padding, 
+ .hero-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+.hero-slider, .slide 
+    {
+        height: auto !important;
+        min-height: 35vh !important;
+        padding: 30px 0 !important;
+    }
+
+.title 
+   {
+        font-size: 2.2rem !important; /* Mengecilkan judul utama sedikit */
+    }
+}
