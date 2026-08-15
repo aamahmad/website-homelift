@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk | PT DNS - IKAME Home Lift</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS Khusus untuk meniru desain halaman Produk Ikame Group -->
+    <style>
+        .page-header { text-align: center; padding: 100px 20px 20px; background-color: #ffffff; }
+        .page-title { font-size: 2.8rem; color: #1a1a1a; margin-bottom: 15px; font-weight: 700; }
+        .page-desc { color: #666; max-width: 700px; margin: 0 auto; line-height: 1.6; font-size: 1.05rem; }
+        
+        /* Tombol Filter Oval (Pill Buttons) */
+        .filter-container { display: flex; justify-content: center; gap: 15px; margin: 40px 0; flex-wrap: wrap; }
+        .filter-btn { padding: 10px 25px; border: 1px solid #e0e0e0; border-radius: 30px; background: white; color: #555; cursor: pointer; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; }
+        .filter-btn:hover { border-color: #b8860b; color: #b8860b; }
+        .filter-btn.active { background-color: #a67c00; color: white; border-color: #a67c00; }
+        
+        /* Desain Kartu Produk */
+        /* Desain Kartu Produk - Diubah agar muat 4 sebaris */
+        .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px 0 80px; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease; text-decoration: none; display: block; border: 1px solid #f0f0f0; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+        .product-img { width: 100%; height: 350px; object-fit: cover; border-bottom: 1px solid #f0f0f0; }
+        .product-info { padding: 25px 20px; text-align: center; }
+        .product-name { color: #1a1a1a; font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+        .product-category { color: #a67c00; font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body style="background-color: #ffffff;">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="scrolled" style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo/logo premium.png" alt="Logo IKAME Home Lift" class="logo-img" style="height: 50px; width: auto; object-fit: contain;"> 
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" style="color: #333;">Beranda</a></li>
+                <li><a href="tentang-kami.html" style="color: #333;">Tentang Kami</a></li>
+                <li><a href="produk.html" class="active" style="color: #a67c00;">Produk</a></li>
+                <li><a href="index.html#kustomisasi">Kustomisasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Halaman -->
+    <header class="page-header">
+        <p style="color: #888; font-size: 0.9rem; margin-bottom: 20px; text-align: left; max-width: 1200px; margin: 0 auto 30px;">Beranda / Produk IKAME Lift</p>
+        <h1 class="page-title">Produk IKAME Lift</h1>
+        <p class="page-desc">
+            Kami menyediakan berbagai produk dan solusi mobilitas vertikal untuk kebutuhan hunian premium, komersial, hingga material handling dengan fokus pada kualitas, keamanan, dan desain elegan.
+        </p>
+
+    <!-- Grid Katalog Produk -->
+    <section class="container">
+        <div class="product-grid">
+            
+            <!-- Produk 1: Traction Lift -->
+            <a href="spesifikasi-traksi.html" class="product-card">
+                <img src="homelift/traction type.png" alt="Traction Lift" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Home Lift Traksi</h3>
+                    <span class="product-category">Traction Type</span>
+                </div>
+            </a>
+
+            <!-- Produk 2: Hydraulic Lift -->
+            <a href="spesifikasi-hidraulik.html" class="product-card">
+                <img src="homelift/hydraulic type.png" alt="Hydraulic Lift" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Home Lift Hidraulik</h3>
+                    <span class="product-category">Hydraulic Type</span>
+                </div>
+            </a>
+
+            <!-- Produk 3: Dumbwaiter -->
+            <a href="spesifikasi-dumbwaiter.html" class="product-card">
+                <img src="homelift/dumbwaiter.png" alt="Dumbwaiter Lift" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Dumbwaiter / Food Lift</h3>
+                    <span class="product-category">Service Lift</span>
+                </div>
+            </a>
+
+            <!-- Produk 4: Wheelchair Lift -->
+            <a href="spesifikasi-wheelchair.html" class="product-card">
+                <img src="homelift/wheelchair lift.png" alt="Wheelchair Lift" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Wheelchair Lift</h3>
+                    <span class="product-category">Accessibility</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
