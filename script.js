@@ -1,79 +1,92 @@
 
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+function switchTab(event, tabId) {
+  const panes = document.querySelectorAll('.tab-pane');
+  panes.forEach(pane => pane.classList.remove('active'));
+
+  const btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(btn => btn.classList.remove('active'));
+
+  document.getElementById(tabId).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+          link.addEventListener('click', () => {
+              navMenu.classList.remove('active');
+          });
+      });
+  }
+
+  const quoteForm = document.getElementById('quoteForm');
+  if (quoteForm) {
+      quoteForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          const name = document.getElementById('formName').value.trim();
+          const phone = document.getElementById('formPhone').value.trim();
+          const floors = document.getElementById('formFloors').value;
+          const liftType = document.getElementById('formLiftType').value;
+          const city = document.getElementById('formCity').value.trim() || '-';
+
+          const waMessage = `Halo Tim Penjualan IKAME Lift,%0A%0ASaya ingin mengajukan permintaan penawaran harga:%0A- *Nama Pemesan:* ${encodeURIComponent(name)}%0A- *No. WhatsApp:* ${encodeURIComponent(phone)}%0A- *Kebutuhan Lantai:* ${encodeURIComponent(floors)}%0A- *Tipe Lift:* ${encodeURIComponent(liftType)}%0A- *Kota / Lokasi Proyek:* ${encodeURIComponent(city)}%0A%0AMohon bantuan estimasi harga dan jadwal konsultasi. Terima kasih.`;
+
+          const url = `https://wa.me/6281281192244?text=${waMessage}`;
+          window.open(url, '_blank');
+      });
+  }
 });
 
 
-let slideIndex = 0;
-let slideInterval;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot'); 
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100; 
 
-function showSlide(index) {
-    if (index >= slides.length) slideIndex = 0;
-    if (index < 0) slideIndex = slides.length - 1;
-
-    
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('active');
-        slides[i].style.display = "none"; 
-    }
-
-    
-    if (slides[slideIndex]) {
-        slides[slideIndex].classList.add('active');
-        slides[slideIndex].style.display = "flex";
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
     }
 }
+window.addEventListener("scroll", reveal);
+reveal();
 
-function nextSlide() {
-    slideIndex++;
-    showSlide(slideIndex);
-    resetInterval();
-}
-
-function prevSlide() {
-    slideIndex--;
-    showSlide(slideIndex);
-    resetInterval();
-}
-
-function startInterval() {
-    slideInterval = setInterval(nextSlide, 5000); 
-}
-
-function resetInterval() {
-    clearInterval(slideInterval);
-    startInterval();
-}
-
-
-function openTab(evt, tabName) {
-    let tabContents = document.getElementsByClassName("tab-body");
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-        tabContents[i].classList.remove("active");
-    }
-
-    let tabLinks = document.getElementsByClassName("tab-link");
-    for (let i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
-
-    document.getElementById(tabName).style.display = "block";
-    document.getElementById(tabName).classList.add("active");
-    evt.currentTarget.classList.add("active");
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    if (slides.length > 0) {
-        showSlide(slideIndex);
-        startInterval();
-    }
-});
+/* 1. FUNGSI TOMBOL MENU MOBILE */
+   const menuToggle = document.getElementById('menuToggle');
+   const navMenu = document.getElementById('navMenu');
+   
+   if (menuToggle && navMenu) {
+       menuToggle.addEventListener('click', function() {
+           navMenu.classList.toggle('active');
+       });
+   }
+   
+   /* 2. FUNGSI FORMULIR OTOMATIS KE WHATSAPP */
+   const quoteForm = document.getElementById('quoteForm');
+   
+   if (quoteForm) {
+       quoteForm.addEventListener('submit', function(e) {
+           e.preventDefault(); 
+           
+           let name = document.getElementById('formName').value;
+           let phone = document.getElementById('formPhone').value;
+           let floors = document.getElementById('formFloors').value;
+           let liftType = document.getElementById('formLiftType').value;
+           let city = document.getElementById('formCity').value;
+   
+           let message = `Halo IKAME, perkenalkan saya *${name}*.\n\nSaya ingin konsultasi estimasi biaya pemasangan Home Lift. Berikut adalah detail rencana proyek saya:\n\n* Tipe Lift: ${liftType}\n* Jumlah Lantai: ${floors}\n* Lokasi Proyek: ${city}\n* Nomor Kontak: ${phone}\n\nMohon panduan dan informasi lebih lanjut mengenai ukuran void dan harganya. Terima kasih.`;
+           
+           let waURL = `https://wa.me/6281281192244?text=${encodeURIComponent(message)}`;
+           window.open(waURL, '_blank');
+       });
+   }

@@ -3,299 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IKAME Premium Home Lift | PT DNS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Home Elevator & Villa Lift Manufacturer | IKAME PT DNS</title>
+    <link rel="icon" href="logo/logo premium.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#hero">
-                    <img src="logo/logo premium.png" alt="Logo IKAME Home Lift" class="logo-img">
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> (021) 8551 7200</span>
+                <span><i class="fa-brands fa-whatsapp"></i> +62 812-8119-2244</span>
+                <span><i class="fa-solid fa-envelope"></i> info@damarnusantara.com</span>
+            </div>
+            <div class="top-actions">
+                <a href="#inquiry" class="btn-top-quote"><i class="fa-solid fa-envelope-open-text"></i> Minta Penawaran Cepat</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo">
+                <img src="logo/logo premium.png" alt="IKAME Home Lift" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#products">Model Lift</a></li>
+                    <li><a href="#features">Keunggulan</a></li>
+                    <li><a href="#parameters">Spesifikasi</a></li>
+                    <li><a href="#safety">Sistem Keamanan</a></li>
+                    <li><a href="#customization">Kustomisasi</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="https://wa.me/6281281192244" target="_blank" class="btn-wa-header">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Kami
+                </a>
+                <button class="mobile-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section reveal">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="badge-tag">PRODUSEN LIFT HUNIAN & VILLA</span>
+                    <h1>Home Elevator & <span class="text-highlight">Villa Lift System</span></h1>
+                    <p class="hero-desc">
+                        Solusi lift hunian modern tanpa galian pit dalam dan tanpa ruang mesin (MRL). Menggunakan teknologi hidraulik senyap dan traksi presisi tinggi untuk kenyamanan serta keamanan maksimal seluruh keluarga.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#inquiry" class="btn-primary-wemet"><i class="fa-solid fa-paper-plane"></i> Dapatkan Penawaran Harga</a>
+                        <a href="#parameters" class="btn-secondary-wemet"><i class="fa-solid fa-list"></i> Lihat Parameter Teknis</a>
+                    </div>
+                </div>
+                <div class="hero-image-box">
+                    <img src="homelift/lift keluarga.png" alt="IKAME Home Elevator" class="hero-main-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar reveal">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <div>
+                        <h4>16+ Tahun Pengalaman</h4>
+                        <p>Manufaktur & fabrikasi presisi</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <div>
+                        <h4>Tanpa Pit / Shallow Pit</h4>
+                        <p>Tanpa merusak struktur lantai dasar</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h4>Fitur UPS Emergency</h4>
+                        <p>Evakuasi otomatis saat mati listrik</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-sliders"></i>
+                    <div>
+                        <h4>100% Desain Kustom</h4>
+                        <p>Sesuai denah & interior ruangan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-label">LINI PRODUK</span>
+                <h2>Model & Tipe <span class="text-highlight">Home Lift IKAME</span></h2>
+                <p>Pilihan mekanisme lift yang disesuaikan dengan arsitektur, ketersediaan ruang, dan kapasitas muatan.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Produk 1: Hydraulic Home Lift -->
+                <a href="spesifikasi-hidraulik.html" class="product-card" style="text-decoration: none; color: inherit;">
+                    <div class="card-img-wrap">
+                        <img src="homelift/hydraulic type.png" alt="Hydraulic Home Lift">
+                        <span class="card-badge">Paling Populer</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Home Lift Hidraulik</h3>
+                        <p class="card-subtitle">Sistem Pendorong Hidraulik Senyap</p>
+                        <ul class="card-specs">
+                            <li><i class="fa-solid fa-check"></i> Kapasitas beban: 320 - 450 kg</li>
+                            <li><i class="fa-solid fa-check"></i> Operasional sangat halus & senyap</li>
+                            <li><i class="fa-solid fa-check"></i> Desain ringkas tanpa galian pit</li>
+                        </ul>
+                        <span class="card-link">Detail Spesifikasi <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Produk 2: Traction Home Lift -->
+                <a href="spesifikasi-traction.html" class="product-card" style="text-decoration: none; color: inherit;">
+                    <div class="card-img-wrap">
+                        <img src="homelift/traction type.png" alt="Traction Home Lift">
+                        <span class="card-badge">Efisiensi Tinggi</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Home Lift Traksi (MRL)</h3>
+                        <p class="card-subtitle">Gearless Permanent Magnet Motor</p>
+                        <ul class="card-specs">
+                            <li><i class="fa-solid fa-check"></i> Kecepatan hingga 0.4 m/s untuk 3-5 lantai</li>
+                            <li><i class="fa-solid fa-check"></i> Hemat energi konsumsi listrik</li>
+                            <li><i class="fa-solid fa-check"></i> Tanpa ruang mesin (Machine Room-Less)</li>
+                        </ul>
+                        <span class="card-link">Detail Spesifikasi <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Produk 3: Dumbwaiter / Food Lift -->
+                <a href="spesifikasi-dumbwaiter.html" class="product-card" style="text-decoration: none; color: inherit;">
+                    <div class="card-img-wrap">
+                        <img src="homelift/dumbwaiter.png" alt="Dumbwaiter Lift">
+                        <span class="card-badge">Service Lift</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dumbwaiter / Food Lift</h3>
+                        <p class="card-subtitle">Stainless Steel SUS 304 Food Grade</p>
+                        <ul class="card-specs">
+                            <li><i class="fa-solid fa-check"></i> Kapasitas muat: 100 - 300 kg</li>
+                            <li><i class="fa-solid fa-check"></i> Pintu Bi-Parting higienis dan rapat</li>
+                            <li><i class="fa-solid fa-check"></i> Khusus makanan, barang, dan dokumen</li>
+                        </ul>
+                        <span class="card-link">Detail Spesifikasi <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Produk 4: Platform Wheelchair Lift -->
+                <a href="spesifikasi-wheelchair.html" class="product-card" style="text-decoration: none; color: inherit;">
+                    <div class="card-img-wrap">
+                        <img src="homelift/wheelchair lift.png" alt="Wheelchair Platform Lift">
+                        <span class="card-badge">Aksesibilitas</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Platform Wheelchair Lift</h3>
+                        <p class="card-subtitle">Akses Khusus Lansia & Difabel</p>
+                        <ul class="card-specs">
+                            <li><i class="fa-solid fa-check"></i> Kapasitas beban: 250 - 400 kg</li>
+                            <li><i class="fa-solid fa-check"></i> Ramp akses otomatis & panel ergonomis</li>
+                            <li><i class="fa-solid fa-check"></i> Pemasangan praktis indoor & outdoor</li>
+                        </ul>
+                        <span class="card-link">Detail Spesifikasi <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#hero">Beranda</a></li>
-                <li><a href="tentang-kami.html">Tentang Kami</a></li>
-                <li><a href="keunggulan.html    ">Keunggulan</a></li>
-                <li><a href="produk.html">Produk</a></li>
-                <li><a href="#specs">Spesifikasi & Konstruksi</a></li>
-                <li><a href="#kustomisasi">Kustomisasi</a></li>
-                <li><a href="https://wa.me/6281281192244" target="_blank" class="btn-outline">Gratis Konsultasi</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Slider Section -->
-    <section id="hero" class="hero-slider">
-        <div class="slides-container">
-            <div class="slide active" style="background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), 
-              url('homelift/lift keluarga.png');">
-                <div class="hero-content">
-                    <h2 class="subtitle">Luxury That Move With You</h2>
-                    <h1 class="title">Lift Rumah Premium <span class="gold-text">IKAME</span></h1>
-                    <p class="description">Teknologi hidrolik yang senyap dan efisien, dirancang khusus tanpa pit dan renovasi besar.</p>
-                    <div class="cta-group">
-                        <a href="https://wa.me/6281281192244" target="_blank" class="btn-primary">Whatsapp Us!</a>
-                        <a href="#features" class="btn-secondary">Pelajari Lebih Lanjut</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slide" style="background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('homelift/lift keluarga2.png');">
-                <div class="hero-content">
-                    <h2 class="subtitle">Desain Elegan & Modern</h2>
-                    <h1 class="title">Personalisasi <span class="gold-text">Tanpa Batas</span></h1>
-                    <p class="description">Menyatu sempurna dengan arsitektur rumah Anda. Pilihan material mewah dari kaca infinity hingga stainless steel.</p>
-                    <div class="cta-group">
-                        <a href="#customization" class="btn-primary">Lihat Kustomisasi</a>
-                    </div>
-                </div>
-            </div>
-
-        <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-        <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
-        <div class="slider-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
         </div>
     </section>
 
-    <section id="company-profile" class="section-padding">
-        <div class="container specs-container">
-            
-            <div class="specs-image">
-                <img src="logo/ikame.png  " alt="Profil PT DNS - IKAME Group" 
-                class="img-fluid rounded shadow-lg">
+    <section id="features" class="section-padding bg-white reveal">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-label">KEUNGGULAN UTAMA</span>
+                <h2>Mengapa Memilih <span class="text-highlight">IKAME Home Lift?</span></h2>
+                <p>Teknologi modern yang dirancang untuk kemudahan pemasangan, efisiensi ruang, dan keselamatan keluarga.</p>
             </div>
 
-            <div class="specs-content">
-                <h2 class="section-title text-left">Tentang <span class="gold-text">PT DNS (IKAME Group)</span></h2>
-                <p class="mb-4"><strong>PT Damar Nusantara Sentosa (PT DNS)</strong> adalah perusahaan manufaktur dan fabrikasi logam dengan pengalaman lebih dari 16 tahun dalam menghadirkan produk berkualitas untuk berbagai sektor industri di Indonesia.</p>
-                <p class="mb-4">Sebagai bagian dari <strong>IKAME Group</strong>, DNS dikenal luas melalui produk peralatan otomotif, khususnya sistem hidrolik. Seiring berkembangnya kebutuhan pasar, PT DNS memperluas lini bisnisnya dengan menghadirkan solusi <em>home lift</em> premium untuk hunian modern.</p>
-                <p>IKAME Home Lift dikembangkan sebagai solusi mobilitas vertikal yang mengutamakan kenyamanan, keamanan, dan efisiensi ruang untuk memberikan nilai jangka panjang bagi rumah Anda.</p>
-            </div>
+            <div class="features-grid-wemet">
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-maximize"></i></div>
+                    <h4>Tanpa Pit & Hemat Ruang</h4>
+                    <p>Dapat dipasang langsung di atas lantai keramik tanpa pembongkaran fondasi besar, menghemat area void secara optimal.</p>
+                </div>
 
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-volume-low"></i></div>
+                    <h4>Silent Power Station</h4>
+                    <p>Teknologi pompa hidraulik dengan peredam getaran akustik sehingga kebisingan operasional lift sangat rendah (<48 dB).</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Sistem Keamanan Ganda</h4>
+                    <p>Dilengkapi Mechanical Safety Bottom Edge, sensor tirai inframerah, dan katup darurat pencegah turun bebas.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>UPS Emergency Backup</h4>
+                    <p>Saat listrik rumah padam tiba-tiba, lift otomatis turun perlahan ke lantai terdekat dan membuka pintu secara aman.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h4>Instalasi Modular Baut</h4>
+                    <p>Sistem perakitan modular dengan sambungan baut presisi menjamin proses pemasangan rapi, cepat, dan minim kotoran.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feat-icon"><i class="fa-solid fa-swatchbook"></i></div>
+                    <h4>Kustomisasi Interior Mewah</h4>
+                    <p>Pilihan rangka aluminium aviasi, kaca tempered panorama, dinding stainless etching gold, dan lantai marmer PVC.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Why Choose Us / Solusi Mobilitas Section -->
-    <section id="features" class="section-padding bg-light">
+    <section id="parameters" class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-label">PARAMETER TEKNIK</span>
+                <h2>Spesifikasi & Dimensi <span class="text-highlight">Standar Industri</span></h2>
+                <p>Parameter teknis acuan untuk arsitek, kontraktor, dan perencanaan ruang hunian.</p>
+            </div>
+
+            <div class="param-layout">
+                <div class="param-table-container">
+                    <table class="wemet-table">
+                        <thead>
+                            <tr>
+                                <th>Item Parameter</th>
+                                <th>Rincian Spesifikasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tipe Sistem Penggerak</strong></td>
+                                <td>Hydraulic Power Station / Traction MRL Gearless</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kapasitas Beban (Rated Load)</strong></td>
+                                <td>320 kg - 450 kg (3 - 5 Orang)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jumlah Pemberhentian (Stops)</strong></td>
+                                <td>2 hingga 4 Pemberhentian (2 - 4 Lantai)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kecepatan Angkat (Speed)</strong></td>
+                                <td>0.15 - 0.3 m/detik (Halus & Nyaman)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kebutuhan Pit</strong></td>
+                                <td>Tanpa Pit (0 mm) / Shallow Pit (50 - 100 mm)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dimensi Standar Kabin</strong></td>
+                                <td>1.000 mm (P) x 1.000 mm (L) x 2.100 mm (T)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dimensi Void Luar (Shaft)</strong></td>
+                                <td>1.100 mm x 1.330 mm (Dapat Disesuaikan)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Konsumsi Daya Listrik</strong></td>
+                                <td>2.200 Watt (Single Phase 220V / 3 Phase 380V)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Material Struktur & Dinding</strong></td>
+                                <td>Profil Aluminium Aviasi + Kaca Tempered 8/10 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sistem Kontrol Operasional</strong></td>
+                                <td>Microcontroller Board + Touch Screen COP / Push Button</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="param-blueprint-box">
+                    <div class="blueprint-card">
+                        <img src="homelift/kerangka lift.png" alt="Skema Konstruksi Lift">
+                        <div class="blueprint-footer">
+                            <h4><i class="fa-solid fa-ruler-combined"></i> Butuh Ukuran Custom?</h4>
+                            <p>Kami dapat menyesuaikan dimensi struktur lift dengan ukuran void tangga atau celah ruangan yang tersedia di rumah Anda.</p>
+                            <a href="https://wa.me/6281281192244?text=Halo%20IKAME,%20saya%20mau%20konsultasi%20ukuran%20kustom%20lift." target="_blank" class="btn-custom-quote">Konsultasikan Dimensi Void</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="safety" class="section-padding bg-dark text-white reveal">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-label text-gold">KEAMANAN TINGKAT TINGGI</span>
+                <h2 class="text-white">Sistem Proteksi Keselamatan Multi-Lapis</h2>
+                <p class="text-gray">Dilengkapi standar keamanan ketat untuk menjamin ketenangan seluruh anggota keluarga.</p>
+            </div>
+
+            <div class="safety-grid">
+                <div class="safety-card">
+                    <div class="safety-icon-wrap"><i class="fa-solid fa-arrows-down-to-line"></i></div>
+                    <div class="safety-details">
+                        <h4>Mechanical Safety Edge</h4>
+                        <p>Sensor mekanik di bagian bawah sangkar kabin yang langsung menghentikan lift saat mendeteksi rintangan.</p>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-icon-wrap"><i class="fa-solid fa-border-all"></i></div>
+                    <div class="safety-details">
+                        <h4>Infrared Light Curtain Sensor</h4>
+                        <p>Tirai sensor inframerah di area pintu masuk. Lift tidak akan bergerak jika pintu terhalang atau terbuka.</p>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-icon-wrap"><i class="fa-solid fa-car-battery"></i></div>
+                    <div class="safety-details">
+                        <h4>UPS Emergency Rescue Device</h4>
+                        <p>Baterai darurat otomatis yang membawa kabin turun ke lantai terdekat dan membuka pintu ketika listrik PLN padam.</p>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-icon-wrap"><i class="fa-solid fa-hand"></i></div>
+                    <div class="safety-details">
+                        <h4>Manual Emergency Lowering Valve</h4>
+                        <p>Katup manual untuk menurunkan kabin secara terkontrol tanpa membutuhkan pasokan listrik dari luar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customization" class="section-padding bg-white reveal">
         <div class="container text-center">
-            <h2 class="section-title">Solusi Mobilitas Vertikal <span class="gold-text">Modern</span></h2>
-            <p class="section-subtitle mb-5" style="color: #666; max-width: 600px; margin: 0 auto;">Dikembangkan untuk meningkatkan kualitas hidup dan nilai hunian Anda dengan standar keamanan serta kenyamanan kelas dunia.</p>
-            
-            <div class="features-grid">
-                <!-- Card 1: Halus & Stabil -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                    </div>
-                    <h3 class="feature-title">Halus & Stabil</h3>
-                    <p class="feature-text">Sistem hydraulic memberikan pergerakan yang sangat halus dengan operasional senyap (Silent Pump Station).</p>
+            <div class="section-heading">
+                <span class="sub-label">DEKORASI & FINISHING</span>
+                <h2>Pilihan Kustomisasi Desain Kabin</h2>
+                <p>Personalisasikan kabin lift agar serasi dengan gaya interior hunian Anda.</p>
+            </div>
+
+            <div class="tab-wrapper">
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="switchTab(event, 'warna-tab')">Warna Rangka Kabin</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'dinding-tab')">Dinding Belakang</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'lantai-tab')">Lantai PVC & Marmer</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'plafon-tab')">Desain Plafon LED</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'handrail-tab')">Handrail Kabin</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'handle-tab')">Handle Pintu</button>
                 </div>
 
-                <!-- Card 2: Tanpa Pit -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <div id="warna-tab" class="tab-pane active">
+                    <h4 class="tab-pane-title">Koleksi Warna Rangka Kabin (Seri 01 - 08)</h4>
+                    <p class="tab-pane-desc">Pilihan warna Matte Black, Luxury Gold, Champagne, Silver, hingga Motif Kayu Alami.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/koleksi warna.png" alt="Koleksi Warna Rangka Kabin">
                     </div>
-                    <h3 class="feature-title">Tanpa Pit</h3>
-                    <p class="feature-text">Desain shaftless yang ringkas. Pemasangan langsung di atas lantai beton tanpa perlu membongkar struktur.</p>
                 </div>
 
-                <!-- Card 3: Keamanan Ekstra -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <div id="dinding-tab" class="tab-pane">
+                    <h4 class="tab-pane-title">Dinding Stainless Steel Etching (Seri IK01 - IK06)</h4>
+                    <p class="tab-pane-desc">Tekstur laser-etching elegan, Rose Gold Mirror, dan Hairline Stainless Steel tahan gores.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/koleksi dinding.png" alt="Koleksi Dinding Belakang">
                     </div>
-                    <h3 class="feature-title">Keamanan Ekstra</h3>
-                    <p class="feature-text">Dilengkapi UPS Backup, Mechanical Safety Edge, dan Sensor Inframerah ganda untuk proteksi maksimal.</p>
                 </div>
 
-                <!-- Card 4: Efisien Listrik -->
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <div id="lantai-tab" class="tab-pane">
+                    <h4 class="tab-pane-title">Koleksi Lantai PVC Anti-Selip (Seri F01 - F12)</h4>
+                    <p class="tab-pane-desc">Motif marmer mewah dengan permukaan tahan gores dan mudah dibersihkan.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/koleksi-lantai.png" alt="Koleksi Lantai PVC">
                     </div>
-                    <h3 class="feature-title">Efisien Listrik</h3>
-                    <p class="feature-text">Konsumsi daya hanya 2200 Watt (220V/1 Phase), hemat energi untuk penggunaan harian di rumah.</p>
+                </div>
+
+                <div id="plafon-tab" class="tab-pane">
+                    <h4 class="tab-pane-title">Koleksi Plafon & LED Downlight (Seri ZC01 - ZC08)</h4>
+                    <p class="tab-pane-desc">Plafon modern titanium mirror dengan pencahayaan LED hemat daya yang hangat.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/koleksi-plafon.png" alt="Koleksi Plafon">
+                    </div>
+                </div>
+                
+                <div id="handrail-tab" class="tab-pane">
+                    <h4 class="tab-pane-title">Koleksi Handrail Kabin (Seri ZC-F001 - ZC-F005)</h4>
+                    <p class="tab-pane-desc">Pilihan pegangan tangan (handrail) dari material stainless steel hingga paduan kayu elegan.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/handrail series.png" alt="Koleksi Handrail Kabin IKAME">
+                    </div>
+                </div>
+
+                <div id="handle-tab" class="tab-pane">
+                    <h4 class="tab-pane-title">Koleksi Door Handle (Seri ZC-LS001 - ZC-LS007)</h4>
+                    <p class="tab-pane-desc">Desain gagang pintu klasik, modern, hingga melingkar dengan finishing premium.</p>
+                    <div class="tab-image-box">
+                        <img src="homelift/door hand series.png" alt="Koleksi Handle Pintu IKAME">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Hydraulic -->
-    <!-- Why Hydraulic -->
-    <section class="section-padding">
-        <div class="container specs-container">
-            
-            <!-- BAGIAN KIRI: Teks & Sertifikat -->
-            <div class="specs-content">
-                <h2 class="section-title text-left">Lebih Dari Sekedar <span class="gold-text">Home Lift</span></h2>
-                <p class="mb-4">Struktur yang kuat, sistem yang andal, dan desain yang matang menjadikan <strong>IKAME Home Lift</strong> solusi jangka panjang untuk hunian modern.</p>
-                
-                <div class="feature-highlight">
-                    <h3 class="highlight-title">Kenapa Sistem Hydraulic IKAME?</h3>
-                    <ul class="highlight-list">
-                        <li>✔️ Sistem hydraulic yang halus dan stabil</li>
-                        <li>✔️ Operasional senyap untuk kenyamanan rumah</li>
-                        <li>✔️ Desain shaftless yang ringkas dan modern</li>
-                        <li>✔️ Tanpa pit dan tanpa renovasi besar</li>
-                        <li>✔️ Aman untuk lansia dan anak-anak</li>
-                        <li>✔️ Cocok untuk hunian 2-3 lantai</li>
-                    </ul>
+    <section id="inquiry" class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="inquiry-grid">
+                <div class="inquiry-left">
+                    <span class="sub-label">KONSULTASI GRATIS</span>
+                    <h2>Minta Estimasi Biaya & Konsultasi Tata Letak</h2>
+                    <p>Hubungi engineer kami untuk mendapatkan rincian estimasi biaya, rekomendasi tipe mekanisme, dan survey lokasi.</p>
+
+                    <div class="inquiry-contact-card">
+                        <div class="icc-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Telepon Kantor:</strong>
+                                <span>(021) 8551 7200</span>
+                            </div>
+                        </div>
+                        <div class="icc-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp Konsultasi:</strong>
+                                <span>+62 812-8119-2244</span>
+                            </div>
+                        </div>
+                        <div class="icc-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Pabrik & Kantor:</strong>
+                                <span>Jl. Mawar No. 96, Jatirahayu, Kec. Pd. Melati, Kota Bekasi, Jawa Barat</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Bagian Gambar Sertifikat -->
-                <div class="certifications mt-3">
-                    <img src="homelift/sertifikat.png" alt="Sertifikasi IKAME Home Lift" class="cert-img">
+                <div class="inquiry-right">
+                    <div class="form-wrapper">
+                        <h3>Kirim Permintaan Penawaran</h3>
+                        <form id="quoteForm">
+                            <div class="form-group">
+                                <label>Nama Lengkap Anda *</label>
+                                <input type="text" id="formName" placeholder="Contoh: Bapak Hendra" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor WhatsApp Aktif *</label>
+                                <input type="tel" id="formPhone" placeholder="Contoh: 081234567890" required>
+                            </div>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label>Jumlah Lantai</label>
+                                    <select id="formFloors">
+                                        <option value="2 Lantai">2 Lantai (2 Stops)</option>
+                                        <option value="3 Lantai">3 Lantai (3 Stops)</option>
+                                        <option value="4 Lantai">4 Lantai (4 Stops)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipe Lift</label>
+                                    <select id="formLiftType">
+                                        <option value="Home Lift Hidraulik">Home Lift Hidraulik</option>
+                                        <option value="Home Lift Traksi (MRL)">Home Lift Traksi (MRL)</option>
+                                        <option value="Dumbwaiter / Food Lift">Dumbwaiter / Food Lift</option>
+                                        <option value="Platform Wheelchair Lift">Wheelchair Lift</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Kota / Lokasi Proyek</label>
+                                <input type="text" id="formCity" placeholder="Contoh: Jakarta Selatan, Surabaya, dll.">
+                            </div>
+                            <button type="submit" class="btn-submit-form"><i class="fa-brands fa-whatsapp"></i> Hubungkan ke WhatsApp Penjualan</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="specs-image">
-                <img src="homelift/lift vertikal.png" alt="Keunggulan Sistem Hidrolik IKAME" class="img-fluid rounded shadow-lg img-vertikal">
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Spesifikasi Tabel -->
-    <section id="specs" class="section-padding bg-light">
-        <div class="container specs-container">
-            <div class="specs-image">
-                
-                    <div>
-                        <img src="homelift/safety lift.png" alt="Detail Fitur Kabin Lift IKAME" 
-                        style="width: 100%; height: auto; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-                         border-radius: 12px; border: 1px solid #eaeaea;">
-                    
-                </div>
-            </div>
-            <div class="specs-content">
-                <h2 class="section-title text-left">Spesifikasi Teknis <span>ZC25.1.15</span></h2>
-                <p class="mb-4">IKAME Home Lift dirancang dengan struktur kuat dan komponen andal bersertifikasi internasional.</p>
-                <table class="premium-table">
-                    <tbody>
-                        <tr><td><strong>Kapasitas Angkut</strong></td><td>±450 kg</td></tr>
-                        <tr><td><strong>Jumlah Pemberhentian</strong></td><td>2 - 3 Stop / Lantai</td></tr>
-                        <tr><td><strong>Kecepatan Kerja</strong></td><td>±0,3 m/s</td></tr>
-                        <tr><td><strong>Tinggi Angkat</strong></td><td>3.410 mm</td></tr>
-                        <tr><td><strong>Ukuran Kabin</strong></td><td>1.000 x 1.000 x 2.100 mm</td></tr>
-                        <tr><td><strong>Ukuran Instalasi</strong></td><td>1.100 x 1.330 mm</td></tr>
-                        <tr><td><strong>Material Kabin</strong></td><td>Aluminium (powder coating) & kaca tempered</td></tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </section>
 
     
-<section id="blueprint" class="section-padding">
-    <div class="container specs-container" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; justify-content: space-between;">
-        
-        
-        <div class="specs-image" style="flex: 1; min-width: 350px;">
-            <div class="tech-spec-image-container blueprint-container">
-                <img src="homelift/kerangka lift.png" alt="Skema Konstruksi Lift IKAME" class="img-fluid rounded shadow" style="width: 100%; height: auto;">
-            </div>
-        </div>
-
-        <div class="specs-content" style="flex: 1.2; min-width: 350px;">
-            <h2 class="section-title text-left">Detail Dimensi & <span class="gold-text">Konstruksi</span></h2>
-            <p class="mb-4">Perencanaan ruang yang presisi. Berikut rincian ukuran teknis untuk persiapan pemasangan (Tipe Konstruksi 2 Lantai).</p>
-            
-            <table class="premium-table" style="width: 100%; text-align: left;">
-                <tbody>
-                    <tr><td style="padding: 10px 0;"><strong>Lebar Kabin (Cabin Width)</strong></td><td style="padding: 10px 0;">860 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Kedalaman Kabin (Cabin Depth)</strong></td><td style="padding: 10px 0;">1000 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Lebar Bersih Shaft (Net Width)</strong></td><td style="padding: 10px 0;">960 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Kedalaman Bersih Shaft (Net Depth)</strong></td><td style="padding: 10px 0;">1350 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Area Masuk & Keluar</strong></td><td style="padding: 10px 0;">800 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Tinggi Pintu (Door Height)</strong></td><td style="padding: 10px 0;">2000 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Tinggi Lantai 1 (1F)</strong></td><td style="padding: 10px 0;">2700 mm</td></tr>
-                    <tr><td style="padding: 10px 0;"><strong>Tinggi Lantai 2 (2F)</strong></td><td style="padding: 10px 0;">2555 mm</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Customization / Design Options -->
-    <section id="kustomisasi" class="section-padding bg-light">
-        <div class="container text-center">
-            <h2 class="section-title">Pilihan Kustomisasi Desain</h2>
-            <p class="section-subtitle mb-5" style="color: #666;">Sesuaikan komponen lift Anda agar menyatu sempurna dengan gaya interior hunian.</p>
-            
-            <div class="tabs">
-                <div class="tab-header">
-                    <button class="tab-link active" onclick="openTab(event, 'warna')">Warna Kabin</button>
-                    <button class="tab-link" onclick="openTab(event, 'dinding')">Dinding Belakang</button>
-                    <button class="tab-link" onclick="openTab(event, 'lantai')">Lantai PVC</button>
-                    <button class="tab-link" onclick="openTab(event, 'plafon')">Plafon (Ceiling)</button>
-                </div>
-                <div id="warna" class="tab-body active">
-                    <h3 class="gold-text">Koleksi Warna (01 - 08)</h3>
-                    <h4 class="text-gray mb-4">Pilih dari 8 varian warna premium, termasuk motif kayu elegan, silver, dan matte black.</h4>
-                <div style="margin-top: 30px; display: flex; justify-content: center; padding-bottom: 40px;">
-                   <img src="homelift/koleksi warna.png" alt="Koleksi Warna Kabin Lift IKAME" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                </div>
-                </div>
-
-                <div id="dinding" class="tab-body">
-                    <h3 class="gold-text">Dinding Belakang (Stainless Steel)</h3>
-                    <h4 class="text-gray mb-4">Seri IK01 hingga IK06 dengan pola ukiran dan *mirror finish* yang mewah.</h4>
-                    <div style="margin-top: 30px; display: flex; justify-content: center; padding-bottom: 40px;">
-                        <img src="homelift/koleksi dinding.png" alt="Koleksi Warna Kabin Lift IKAME" style="max-width: 100%; height: auto;">
-                    </div>
-                </div> 
-    
-                <div id="lantai" class="tab-body">
-                    <h3 class="gold-text">Koleksi Lantai PVC (F01 - F12)</h3>
-                    <h4 class="text-gray mb-4">Tersedia 12 corak lantai elegan bernuansa marmer dan geometris klasik.</h4>
-                    <div style="margin-top: 30px; display: flex; justify-content: center; padding-bottom: 40px;">
-                        <img src="homelift/koleksi-lantai.png" alt="Koleksi Lantai PVC" style="max-width: 100%; height: auto;">
-                    </div>
-                </div>
-                <div id="plafon" class="tab-body">
-                    <h3 class="gold-text">Koleksi Plafon (ZC01 - ZC08)</h3>
-                    <h4 class="text-gray mb-4">Plafon berdesain modern dengan Titanium/Rose Gold Mirror Stainless Steel dan LED Downlight.</h4>
-                    <div style="margin-top: 30px; display: flex; justify-content: center; padding-bottom: 40px;">
-                        <img src="homelift/koleksi-plafon.png" alt="Koleksi plafon" style="max-width: 100%; height: auto;">
-                    </div>
+    <footer class="main-footer">
+        <div class="container footer-top">
+            <div class="footer-col col-about">
+                <img src="logo/logo premium.png" alt="IKAME Home Lift" class="footer-logo">
+                <p>PT Damar Nusantara Sentosa (IKAME Group) adalah perusahaan manufaktur dan fabrikasi peralatan hidraulik serta lift hunian premium di Indonesia dengan standar mutu dan keselamatan internasional.</p>
+                <div class="footer-badges">
+                    <span><i class="fa-solid fa-award"></i> 16+ Tahun Pengalaman</span>
+                    <span><i class="fa-solid fa-certificate"></i> ISO Standard Compliant</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-about">
-                <h2>IKAME <span class="gold-text">LIFT</span></h2>
-                <p>PT Damar Nusantara Sentosa (IKAME Group) adalah perusahaan manufaktur dan fabrikasi logam berpengalaman lebih dari 16 tahun di Indonesia.</p>
-            </div>
-            <div class="footer-contact">
-                <h3>Hubungi Kami</h3>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
                 <ul>
-                    <li>📞 (021) 8551 7200</li>
-                    <li>📱 +62 812 8119 2244</li>
-                    <li>📱 +62 851 4849 2119</li>
-                    <li>🌐 www.damarnusantara.com</li>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#products">Pilihan Model Lift</a></li>
+                    <li><a href="#features">Keunggulan Sistem</a></li>
+                    <li><a href="#parameters">Tabel Parameter Teknis</a></li>
+                    <li><a href="tentang-kami.html">Profil Perusahaan</a></li>
                 </ul>
             </div>
-            <div class="footer-address">
-                <h3>Head Office & Showroom</h3>
-                <p>Jl. Mawar No. 96, Jatirahayu,<br>Kec. Pd. Melati, Kota Bekasi<br>Jawa Barat, Indonesia</p>
+
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#inquiry">Konsultasi Layout Void</a></li>
+                    <li><a href="#inquiry">Estimasi Biaya Transparan</a></li>
+                    <li><a href="#safety">Standar Keamanan Multi-Lapis</a></li>
+                    <li><a href="https://wa.me/6281281192244" target="_blank">Layanan Purna Jual & Garansi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col col-contact">
+                <h4>Kontak & Showroom</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Jl. Mawar No. 96, Jatirahayu, Kec. Pd. Melati, Kota Bekasi, Jawa Barat</p>
+                <p><i class="fa-solid fa-phone"></i> (021) 8551 7200</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +62 812-8119-2244</p>
+                <p><i class="fa-solid fa-globe"></i> www.damarnusantara.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner text-center" style="display: block;">
+                <p>&copy; 2026 PT Damar Nusantara Sentosa (IKAME Group). All Rights Reserved.</p>
+                <p style="margin-top: 5px;">Spesialis Home Elevator & Villa Lift Indonesia</p>
             </div>
         </div>
     </footer>
 
+    <div class="wa-float-wrapper">
+        <div class="wa-bubble-text">Halo! Butuh bantuan spesifikasi?</div>
+        <a href="https://wa.me/6281281192244?text=Halo%20IKAME,%20saya%20butuh%20panduan%20mengenai%20Lift%20Rumah." class="wa-float-btn" target="_blank" aria-label="Chat WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
     <script src="script.js"></script>
+    
 </body>
 </html>

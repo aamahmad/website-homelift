@@ -3,86 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profil | PT DNS - IKAME Home Lift</title>
-    <!-- Kita panggil style.css yang sama agar desainnya serasi dengan halaman depan -->
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Profil Perusahaan | PT DNS - IKAME Home Lift</title>
+    <link rel="icon" href="logo/logo premium.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NavbarS -->
-    <nav id="navbar" class="scrolled">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo/logo premium.png" alt="Logo IKAME Home Lift" class="logo-img" style="height: 50px; width: auto; object-fit: contain;">
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo">
+                <img src="logo/logo premium.png" alt="IKAME Home Lift" class="logo-img">
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Model Lift</a></li>
+                    <li><a href="index.html#features">Keunggulan</a></li>
+                    <li><a href="tentang-kami.html" class="active">Tentang Kami</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/6281281192244" target="_blank" class="btn-wa-header">
+                    <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
                 </a>
+                <button class="mobile-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang-kami.html" class="active">Tentang Kami</a></li>
-                <li><a href="produk.html" class="active">Produk</a></li>
-                <li><a href="index.html#kustomisasi">Kustomisasi</a></li>
-                <li><a href="https://wa.me/6281281192244" target="_blank" class="btn-outline">Gratis Konsultasi</a></li>
-            </ul>
         </div>
-    </nav>
+    </header>
 
-    <<!-- Bagian Banner Profil Perusahaan -->
-    <section class="hero-slider" style="height: 40vh;">
-        <div class="slide active" style="background-color: #1a1a1a; display: flex; align-items: center; justify-content: center;">
-            <div class="hero-content" style="text-align: center; margin: 0 auto; width: 100%; max-width: 800px; padding: 0 20px; margin-top: 60px;">
-                <h1 class="title" style="color: white; font-size: 3.5rem; margin-bottom: 15px;">Profil <span class="gold-text">PT DNS</span></h1>
-                <p style="color: #cccccc; font-size: 1.1rem; margin: 0 auto;">
-                    <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">Beranda</a> 
-                    <span style="margin: 0 10px; color: #888;">/</span> 
-                    Profile PT DNS
-                </p>    
+    <section class="page-header-banner reveal" style="background: linear-gradient(135deg, rgba(9, 25, 41, 0.95) 0%, rgba(16, 46, 76, 0.9) 100%), url('homelift/lift keluarga.png') center/cover;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span class="text-white">Profil Perusahaan</span>
             </div>
+            <h1 style="font-size: 3rem; margin-bottom: 15px;">Profil PT Damar Nusantara Sentosa</h1>
+            <p style="font-size: 1.1rem; color: #c7d5e4; max-width: 650px; margin: 0 auto;">Bagian dari IKAME Group yang berdedikasi memajukan industri manufaktur dan mobilitas vertikal di Indonesia.</p>
         </div>
     </section>
 
-    <!-- Bagian Konten Profil -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-                
-                <!-- Kolom Teks Sejarah/Deskripsi -->
-                <div style="flex: 1; min-width: 300px;">
-                    <h2 class="gold-text" style="font-size: 2rem; margin-bottom: 20px;">Profil Perusahaan</h2>
-                    <p style="color: #555; line-height: 1.8; margin-bottom: 15px;">
-                        PT DNS adalah bagian dari IKAME Group yang berdedikasi dalam menyediakan solusi Home Lift premium. Dengan pengalaman bertahun-tahun di industri ini, kami berkomitmen untuk menggabungkan teknologi mutakhir dengan desain estetika yang mewah.
-                    </p>
-                    <p style="color: #555; line-height: 1.8;">
-                        Produk kami dirancang khusus untuk memenuhi standar keamanan internasional, memberikan kenyamanan tanpa batas, dan meningkatkan nilai investasi properti Anda tanpa memerlukan modifikasi arsitektur yang ekstrem.
-                    </p>
-                </div>
-                
-                <!-- Kolom Gambar Kantor/Pabrik      -->
-                <div style="flex: 1; min-width: 300px; text-align: center;">
-                    <div style="background-color: #e0e0e0; width: 100%; height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <img src="logo/ikame.png  " alt="Profil PT DNS - IKAME Group" 
-                         class="img-fluid rounded shadow-lg">
+    <section class="section-padding bg-white reveal">
+        <div class="container detail-overview">
+            <div class="overview-text">
+                <span class="sub-label">TENTANG IKAME GROUP</span>
+                <h2>Pabrikasi Lift Rumah <span class="text-highlight">Premium & Terpercaya</span></h2>
+                <p>
+                    <strong>PT Damar Nusantara Sentosa (PT DNS)</strong> adalah bagian dari <strong>IKAME Group</strong> yang berdedikasi tinggi dalam menyediakan solusi <em>Home Lift</em> premium. Dengan pengalaman manufaktur lebih dari 16 tahun di industri ini, kami berkomitmen untuk menggabungkan teknologi mekanik mutakhir dengan desain estetika yang mewah dan fungsional.
+                </p>
+                <p>
+                    Produk kami diproduksi dan dirancang khusus untuk memenuhi standar keamanan internasional, memberikan kenyamanan tanpa batas bagi lansia dan difabel, serta meningkatkan nilai investasi properti hunian Anda tanpa memerlukan modifikasi arsitektur bangunan yang ekstrem.
+                </p>
+
+                <div class="quick-specs-grid" style="margin-top: 30px;">
+                    <div class="quick-spec-box" style="padding: 15px;">
+                        <span>Pengalaman Pabrikasi</span>
+                        <strong style="font-size: 1.2rem;">Lebih dari 16 Tahun</strong>
+                    </div>
+                    <div class="quick-spec-box" style="padding: 15px;">
+                        <span>Kualitas Manufaktur</span>
+                        <strong style="font-size: 1.2rem;">Standar Internasional</strong>
                     </div>
                 </div>
+            </div>
             
-            <!-- Visi & Misi -->
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 60px;">
-                <div style="flex: 1; min-width: 250px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid #D4AF37;">
-                    <h3 class="gold-text" style="margin-bottom: 15px;">Visi Kami</h3>
-                    <p style="color: #555; line-height: 1.6;">Menjadi pelopor penyedia Home Lift premium di Indonesia yang mengutamakan inovasi, keamanan, dan kepuasan pelanggan secara absolut.</p>
-                </div>
-                <div style="flex: 1; min-width: 250px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid #333;">
-                    <h3 style="color: #333; margin-bottom: 15px;">Misi Kami</h3>
-                    <ul style="color: #555; line-height: 1.6; padding-left: 20px;">
-                        <li>Menghadirkan produk berkualitas internasional.</li>
-                        <li>Memberikan layanan purna jual yang responsif.</li>
-                        <li>Terus berinovasi dalam teknologi ramah lingkungan.</li>
-                    </ul>
-                </div>
+            <div class="overview-img">
+                <img src="logo/ikame.png" alt="Kantor dan Pabrik PT DNS IKAME Group">
             </div>
         </div>
     </section>
+
+    <section class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-label">VISI & MISI KAMI</span>
+                <h2>Komitmen Terhadap <span class="text-highlight">Inovasi & Kualitas</span></h2>
+                <p>Membangun fondasi kepercayaan melalui standar kerja yang tinggi dan pelayanan purna jual yang absolut.</p>
+            </div>
+
+            <div class="features-grid-wemet" style="grid-template-columns: 1fr 1fr; max-width: 900px; margin: 0 auto;">
+                
+                
+                <div class="feature-item" style="background: var(--white); border-top: 4px solid var(--accent-gold); padding: 40px;">
+                    <div class="feat-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h4 style="color: var(--primary-color); font-size: 1.4rem; margin-bottom: 15px;">Visi Kami</h4>
+                    <p style="color: var(--text-muted); font-size: 1rem;">
+                        Menjadi pelopor penyedia Home Lift premium di Indonesia yang mengutamakan inovasi teknologi, standar keamanan maksimal, dan kepuasan pelanggan secara absolut.
+                    </p>
+                </div>
+
+                <div class="feature-item" style="background: var(--white); border-top: 4px solid var(--primary-color); padding: 40px;">
+                    <div class="feat-icon" style="background: var(--light-bg); color: var(--primary-color);"><i class="fa-solid fa-bullseye"></i></div>
+                    <h4 style="color: var(--primary-color); font-size: 1.4rem; margin-bottom: 15px;">Misi Kami</h4>
+                    <ul class="card-specs" style="color: var(--text-muted); font-size: 1rem; list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: var(--accent-gold); margin-top: 5px;"></i> 
+                            Menghadirkan produk berkualitas internasional.
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: var(--accent-gold); margin-top: 5px;"></i> 
+                            Memberikan layanan purna jual yang cepat dan responsif.
+                        </li>
+                        <li style="display: flex; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: var(--accent-gold); margin-top: 5px;"></i> 
+                            Terus berinovasi dalam pengembangan teknologi ramah lingkungan.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white reveal">
+        <div class="container text-center">
+            <span class="sub-label text-gold">KUNJUNGI KAMI</span>
+            <h2 class="text-white" style="font-size: 2.2rem; margin-bottom: 20px;">Lihat Langsung Kualitas Manufaktur IKAME</h2>
+            <p class="text-gray" style="max-width: 600px; margin: 0 auto 30px auto;">Kami mengundang Anda untuk berkonsultasi langsung dengan engineer kami dan melihat langsung proses pabrikasi serta unit percontohan lift di showroom kami.</p>
+            
+            <div style="background: var(--dark-card); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; max-width: 500px; margin: 0 auto 30px auto; padding: 25px;">
+                <h4 style="color: var(--accent-gold); margin-bottom: 10px;"><i class="fa-solid fa-location-dot"></i> Head Office & Pabrik</h4>
+                <p style="color: #b0c0d0; margin-bottom: 0;">Jl. Mawar No. 96, Jatirahayu,<br>Kec. Pd. Melati, Kota Bekasi<br>Jawa Barat, Indonesia</p>
+            </div>
+
+            <a href="https://wa.me/6281281192244?text=Halo%20IKAME,%20saya%20ingin%20jadwalkan%20kunjungan%20ke%20Showroom." target="_blank" class="btn-primary-wemet" style="font-size: 1.1rem; padding: 15px 35px;">
+                <i class="fa-regular fa-calendar-check"></i> Jadwalkan Kunjungan
+            </a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner text-center" style="display: block;">
+                <p>&copy; 2026 PT Damar Nusantara Sentosa (IKAME Group). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="wa-float-wrapper">
+        <div class="wa-bubble-text">Halo! Ingin jadwalkan survey lokasi?</div>
+        <a href="https://wa.me/6281281192244?text=Halo%20IKAME,%20saya%20tertarik%20mengenai%20Lift%20Rumah%20dan%20ingin%20konsultasi." class="wa-float-btn" target="_blank" aria-label="Chat WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
