@@ -1187,3 +1187,35 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px solid var(--light-bg);
     }
 }
+
+.hero-text {
+    background: rgba(9, 25, 41, 0.75); /* Warna dasar biru gelap transparan */
+    padding: 35px 40px;
+    border-radius: 16px; /* Ujung melengkung halus */
+    backdrop-filter: blur(6px); /* Efek kaca buram premium */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tepi tipis agar elegan */
+    display: inline-block;
+}
+
+/* ========================================================
+   EFEK KACA BURAM (GLASSMORPHISM) UNTUK KOTAK FITUR
+   ======================================================== */
+   .features-grid-wemet > div,
+   .feature-item {
+       background: rgba(255, 255, 255, 0.65) !important; /* Putih semi-transparan */
+       backdrop-filter: blur(12px) !important; /* Efek kaca buram pembias cahaya */
+       -webkit-backdrop-filter: blur(12px) !important; /* Dukungan untuk Apple/Safari */
+       border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Garis tepi tipis mengkilap */
+       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important; /* Bayangan sangat lembut */
+   }
+
+   /* Mengunci warna teks agar gelap di dalam kotak fitur abu-abu */
+.feature-card li {
+    color: #1a2b3c !important; /* Warna biru navy gelap */
+}
+
+.feature-card li span:first-child,
+.feature-card li strong {
+    color: #091929 !important; /* Warna biru dongker paling gelap untuk judul */
+    font-weight: 700 !important; /* Ditebalkan agar beda dengan deskripsinya */
+}

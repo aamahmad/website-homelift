@@ -61,7 +61,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-/* 1. FUNGSI TOMBOL MENU MOBILE */
    const menuToggle = document.getElementById('menuToggle');
    const navMenu = document.getElementById('navMenu');
    
@@ -71,7 +70,6 @@ reveal();
        });
    }
    
-   /* 2. FUNGSI FORMULIR OTOMATIS KE WHATSAPP */
    const quoteForm = document.getElementById('quoteForm');
    
    if (quoteForm) {
