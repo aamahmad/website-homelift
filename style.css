@@ -664,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1eb956;
 }
 
-/* 11. Footer */
+
 .main-footer {
     background-color: #06111a;
     color: #92a4b8;
@@ -749,7 +749,6 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
 }
 
-/* Floating WhatsApp Button */
 .wa-float {
     position: fixed;
     bottom: 25px;
@@ -777,7 +776,6 @@ h1, h2, h3, h4, h5, h6 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .product-grid { grid-template-columns: repeat(2, 1fr); }
     .features-grid-wemet { grid-template-columns: repeat(2, 1fr); }
@@ -950,7 +948,6 @@ h1, h2, h3, h4, h5, h6 {
     .safety-list .safety-icon-wrap { margin-bottom: 10px; }
 }
 
-/* EFEK ANIMASI PREMIUM & INTERAKSI USER */
 .overview-img img, 
 .catalog-wrapper img, 
 .tab-image-box img, 
@@ -1071,7 +1068,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* --- 2. Optimasi Handphone (Layar < 768px) --- */
 @media screen and (max-width: 768px) {
     h1, .page-header-banner h1 { 
         font-size: 2rem !important; 
@@ -1189,33 +1185,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-text {
-    background: rgba(9, 25, 41, 0.75); /* Warna dasar biru gelap transparan */
+    background: rgba(9, 25, 41, 0.75); 
     padding: 35px 40px;
-    border-radius: 16px; /* Ujung melengkung halus */
-    backdrop-filter: blur(6px); /* Efek kaca buram premium */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tepi tipis agar elegan */
+    border-radius: 16px; 
+    backdrop-filter: blur(6px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
     display: inline-block;
 }
 
-/* ========================================================
-   EFEK KACA BURAM (GLASSMORPHISM) UNTUK KOTAK FITUR
-   ======================================================== */
    .features-grid-wemet > div,
    .feature-item {
-       background: rgba(255, 255, 255, 0.65) !important; /* Putih semi-transparan */
-       backdrop-filter: blur(12px) !important; /* Efek kaca buram pembias cahaya */
-       -webkit-backdrop-filter: blur(12px) !important; /* Dukungan untuk Apple/Safari */
-       border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Garis tepi tipis mengkilap */
-       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important; /* Bayangan sangat lembut */
+       background: rgba(255, 255, 255, 0.65) !important; 
+       backdrop-filter: blur(12px) !important; 
+       -webkit-backdrop-filter: blur(12px) !important; 
+       border: 1px solid rgba(255, 255, 255, 0.8) !important; 
+       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important; 
    }
 
-   /* Mengunci warna teks agar gelap di dalam kotak fitur abu-abu */
 .feature-card li {
-    color: #1a2b3c !important; /* Warna biru navy gelap */
+    color: #1a2b3c !important; 
 }
 
 .feature-card li span:first-child,
 .feature-card li strong {
-    color: #091929 !important; /* Warna biru dongker paling gelap untuk judul */
-    font-weight: 700 !important; /* Ditebalkan agar beda dengan deskripsinya */
+    color: #091929 !important; 
+    font-weight: 700 !important; 
+}
+
+.mobile-menu-btn {
+    display: none !important; 
+}
+
+
+@media (max-width: 991px) {
+    .mobile-menu-btn {
+        display: block !important;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: #ffffff; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 20px;
+        z-index: 999;
+    }
+
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu.active {
+        display: block !important;
+    }
 }
